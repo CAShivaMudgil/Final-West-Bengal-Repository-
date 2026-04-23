@@ -1,0 +1,1 @@
+from flask import Flask, request, jsonify\nimport pandas as pd\n\napp = Flask(__name__)\n\n@app.route('/load_data', methods=['POST'])\ndef load_data():\n    file = request.files['file']\n    df = pd.read_csv(file)\n    return jsonify(df.to_dict()), 200\n\nif __name__ == '__main__':\n    app.run(debug=True)
