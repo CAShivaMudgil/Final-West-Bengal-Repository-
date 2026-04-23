@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Election Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chart.js/2.9.4/Chart.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/xlsx/dist/xlsx.full.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Election Dashboard 2011-2024</h1>
+    </header>
+    <section id="data-filtering">
+        <h2>Filter Data</h2>
+        <!-- Filtering options here -->
+    </section>
+    <section id="vote-share-trends">
+        <h2>Vote Share Trends</h2>
+        <canvas id="voteShareChart"></canvas>
+    </section>
+    <section id="constituency-performance">
+        <h2>Constituency Performance</h2>
+        <canvas id="constituencyChart"></canvas>
+    </section>
+    <section id="demographics">
+        <h2>Demographics</h2>
+        <div id="demographicsData"></div>
+    </section>
+    <button id="export-btn">Export Data</button>
+
+    <script>
+        // JavaScript code for interactivity and data manipulation here
+        $(document).ready(function() {
+            // Fetch and visualize data
+
+            $('#export-btn').click(function() {
+                // Export data functionality
+            });
+        });
+    </script>
+</body>
+</html>
